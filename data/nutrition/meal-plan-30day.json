@@ -1,0 +1,1567 @@
+{
+  "planTitle": "خطة التغذية لمدة 30 يومًا",
+  "calorieGoal": 2400,
+  "proteinGoal": 160,
+  "days": [
+    {
+      "day": 1,
+      "breakfast": [
+        {
+          "name": "شوفان بالحليب والموز والقرفة",
+          "calories": 340,
+          "protein": 14
+        }
+      ],
+      "lunch": [
+        {
+          "name": "عدس بالخضار + أرز أبيض + سلطة",
+          "calories": 460,
+          "protein": 22
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صدر دجاج مشوي + خضار مشوية فقط",
+          "calories": 360,
+          "protein": 38
+        }
+      ],
+      "snacks": [
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        },
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "تمرتان + كوب ماء بارد",
+          "calories": 100,
+          "protein": 1
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "زبادي بروتيني + ملعقة عسل",
+          "calories": 220,
+          "protein": 22
+        }
+      ],
+      "totalCalories": 1760,
+      "totalProtein": 108
+    },
+    {
+      "day": 2,
+      "breakfast": [
+        {
+          "name": "زبادي يوناني بالعسل واللوز",
+          "calories": 290,
+          "protein": 20
+        }
+      ],
+      "lunch": [
+        {
+          "name": "دجاج بالكاري الخفيف + أرز بسمتي",
+          "calories": 540,
+          "protein": 38
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سمك بالفرن بالليمون + سلطة خضراء",
+          "calories": 330,
+          "protein": 32
+        }
+      ],
+      "snacks": [
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        },
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "توست بالعسل الطبيعي",
+          "calories": 180,
+          "protein": 4
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "بيضتان مسلوقتان + توست أسمر",
+          "calories": 260,
+          "protein": 20
+        }
+      ],
+      "totalCalories": 1860,
+      "totalProtein": 141
+    },
+    {
+      "day": 3,
+      "breakfast": [
+        {
+          "name": "توست أسمر بالجبن الأبيض وبيضة مقلية",
+          "calories": 360,
+          "protein": 22
+        }
+      ],
+      "lunch": [
+        {
+          "name": "مكرونة بصلصة الطماطم واللحم المفروم",
+          "calories": 580,
+          "protein": 34
+        }
+      ],
+      "dinner": [
+        {
+          "name": "أومليت بالخضار والجبن قليل الدسم",
+          "calories": 310,
+          "protein": 24
+        }
+      ],
+      "snacks": [
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        },
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "شوفان سريع بكمية قليلة من الحليب",
+          "calories": 160,
+          "protein": 6
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "شيك بروتين واي + موزة",
+          "calories": 260,
+          "protein": 28
+        }
+      ],
+      "totalCalories": 1945,
+      "totalProtein": 121
+    },
+    {
+      "day": 4,
+      "breakfast": [
+        {
+          "name": "فطيرة الشوفان بالتمر والحليب",
+          "calories": 320,
+          "protein": 12
+        }
+      ],
+      "lunch": [
+        {
+          "name": "طاجين حمص بالدجاج وخضار الموسم",
+          "calories": 500,
+          "protein": 35
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صينية خضار بالفرن مع قطع دجاج",
+          "calories": 350,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        },
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "موزة + قهوة سوداء",
+          "calories": 150,
+          "protein": 2
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "صدر دجاج مشوي + أرز أبيض بسيط",
+          "calories": 380,
+          "protein": 40
+        }
+      ],
+      "totalCalories": 1980,
+      "totalProtein": 130
+    },
+    {
+      "day": 5,
+      "breakfast": [
+        {
+          "name": "عجة (أومليت) بالخضار وشريحتي خبز",
+          "calories": 350,
+          "protein": 21
+        }
+      ],
+      "lunch": [
+        {
+          "name": "صدر دجاج مشوي + أرز بني + خضار مشوية",
+          "calories": 520,
+          "protein": 42
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سلطة تونة بالبيض المسلوق وزيت الزيتون",
+          "calories": 340,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        },
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "تمرتان + كوب ماء بارد",
+          "calories": 100,
+          "protein": 1
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "زبادي بروتيني + ملعقة عسل",
+          "calories": 220,
+          "protein": 22
+        }
+      ],
+      "totalCalories": 1790,
+      "totalProtein": 143
+    },
+    {
+      "day": 6,
+      "breakfast": [
+        {
+          "name": "عصيدة الشوفان بالفواكه المجففة",
+          "calories": 300,
+          "protein": 10
+        }
+      ],
+      "lunch": [
+        {
+          "name": "سمك مشوي + كسكسي + سلطة خضراء",
+          "calories": 480,
+          "protein": 36
+        }
+      ],
+      "dinner": [
+        {
+          "name": "شوربة خضار بالفريك + خبز أسمر",
+          "calories": 300,
+          "protein": 14
+        }
+      ],
+      "snacks": [
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        },
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "توست بالعسل الطبيعي",
+          "calories": 180,
+          "protein": 4
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "بيضتان مسلوقتان + توست أسمر",
+          "calories": 260,
+          "protein": 20
+        }
+      ],
+      "totalCalories": 1795,
+      "totalProtein": 91
+    },
+    {
+      "day": 7,
+      "breakfast": [
+        {
+          "name": "بيض مسلوق (2) + خبز أسمر + أفوكادو",
+          "calories": 380,
+          "protein": 18
+        }
+      ],
+      "lunch": [
+        {
+          "name": "لحم بقري مشوي + بطاطا مسلوقة + سلطة",
+          "calories": 560,
+          "protein": 40
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صدر دجاج مشوي + خضار مشوية فقط",
+          "calories": 360,
+          "protein": 38
+        }
+      ],
+      "snacks": [
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        },
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "شوفان سريع بكمية قليلة من الحليب",
+          "calories": 160,
+          "protein": 6
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "شيك بروتين واي + موزة",
+          "calories": 260,
+          "protein": 28
+        }
+      ],
+      "totalCalories": 2000,
+      "totalProtein": 141
+    },
+    {
+      "day": 8,
+      "breakfast": [
+        {
+          "name": "شوفان بالحليب والموز والقرفة",
+          "calories": 340,
+          "protein": 14
+        }
+      ],
+      "lunch": [
+        {
+          "name": "عدس بالخضار + أرز أبيض + سلطة",
+          "calories": 460,
+          "protein": 22
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سمك بالفرن بالليمون + سلطة خضراء",
+          "calories": 330,
+          "protein": 32
+        }
+      ],
+      "snacks": [
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        },
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "موزة + قهوة سوداء",
+          "calories": 150,
+          "protein": 2
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "صدر دجاج مشوي + أرز أبيض بسيط",
+          "calories": 380,
+          "protein": 40
+        }
+      ],
+      "totalCalories": 1920,
+      "totalProtein": 137
+    },
+    {
+      "day": 9,
+      "breakfast": [
+        {
+          "name": "زبادي يوناني بالعسل واللوز",
+          "calories": 290,
+          "protein": 20
+        }
+      ],
+      "lunch": [
+        {
+          "name": "دجاج بالكاري الخفيف + أرز بسمتي",
+          "calories": 540,
+          "protein": 38
+        }
+      ],
+      "dinner": [
+        {
+          "name": "أومليت بالخضار والجبن قليل الدسم",
+          "calories": 310,
+          "protein": 24
+        }
+      ],
+      "snacks": [
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        },
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "تمرتان + كوب ماء بارد",
+          "calories": 100,
+          "protein": 1
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "زبادي بروتيني + ملعقة عسل",
+          "calories": 220,
+          "protein": 22
+        }
+      ],
+      "totalCalories": 1735,
+      "totalProtein": 112
+    },
+    {
+      "day": 10,
+      "breakfast": [
+        {
+          "name": "توست أسمر بالجبن الأبيض وبيضة مقلية",
+          "calories": 360,
+          "protein": 22
+        }
+      ],
+      "lunch": [
+        {
+          "name": "مكرونة بصلصة الطماطم واللحم المفروم",
+          "calories": 580,
+          "protein": 34
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صينية خضار بالفرن مع قطع دجاج",
+          "calories": 350,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        },
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "توست بالعسل الطبيعي",
+          "calories": 180,
+          "protein": 4
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "بيضتان مسلوقتان + توست أسمر",
+          "calories": 260,
+          "protein": 20
+        }
+      ],
+      "totalCalories": 2010,
+      "totalProtein": 121
+    },
+    {
+      "day": 11,
+      "breakfast": [
+        {
+          "name": "فطيرة الشوفان بالتمر والحليب",
+          "calories": 320,
+          "protein": 12
+        }
+      ],
+      "lunch": [
+        {
+          "name": "طاجين حمص بالدجاج وخضار الموسم",
+          "calories": 500,
+          "protein": 35
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سلطة تونة بالبيض المسلوق وزيت الزيتون",
+          "calories": 340,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        },
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "شوفان سريع بكمية قليلة من الحليب",
+          "calories": 160,
+          "protein": 6
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "شيك بروتين واي + موزة",
+          "calories": 260,
+          "protein": 28
+        }
+      ],
+      "totalCalories": 1840,
+      "totalProtein": 138
+    },
+    {
+      "day": 12,
+      "breakfast": [
+        {
+          "name": "عجة (أومليت) بالخضار وشريحتي خبز",
+          "calories": 350,
+          "protein": 21
+        }
+      ],
+      "lunch": [
+        {
+          "name": "صدر دجاج مشوي + أرز بني + خضار مشوية",
+          "calories": 520,
+          "protein": 42
+        }
+      ],
+      "dinner": [
+        {
+          "name": "شوربة خضار بالفريك + خبز أسمر",
+          "calories": 300,
+          "protein": 14
+        }
+      ],
+      "snacks": [
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        },
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "موزة + قهوة سوداء",
+          "calories": 150,
+          "protein": 2
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "صدر دجاج مشوي + أرز أبيض بسيط",
+          "calories": 380,
+          "protein": 40
+        }
+      ],
+      "totalCalories": 1975,
+      "totalProtein": 126
+    },
+    {
+      "day": 13,
+      "breakfast": [
+        {
+          "name": "عصيدة الشوفان بالفواكه المجففة",
+          "calories": 300,
+          "protein": 10
+        }
+      ],
+      "lunch": [
+        {
+          "name": "سمك مشوي + كسكسي + سلطة خضراء",
+          "calories": 480,
+          "protein": 36
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صدر دجاج مشوي + خضار مشوية فقط",
+          "calories": 360,
+          "protein": 38
+        }
+      ],
+      "snacks": [
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        },
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "تمرتان + كوب ماء بارد",
+          "calories": 100,
+          "protein": 1
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "زبادي بروتيني + ملعقة عسل",
+          "calories": 220,
+          "protein": 22
+        }
+      ],
+      "totalCalories": 1740,
+      "totalProtein": 118
+    },
+    {
+      "day": 14,
+      "breakfast": [
+        {
+          "name": "بيض مسلوق (2) + خبز أسمر + أفوكادو",
+          "calories": 380,
+          "protein": 18
+        }
+      ],
+      "lunch": [
+        {
+          "name": "لحم بقري مشوي + بطاطا مسلوقة + سلطة",
+          "calories": 560,
+          "protein": 40
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سمك بالفرن بالليمون + سلطة خضراء",
+          "calories": 330,
+          "protein": 32
+        }
+      ],
+      "snacks": [
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        },
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "توست بالعسل الطبيعي",
+          "calories": 180,
+          "protein": 4
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "بيضتان مسلوقتان + توست أسمر",
+          "calories": 260,
+          "protein": 20
+        }
+      ],
+      "totalCalories": 1970,
+      "totalProtein": 141
+    },
+    {
+      "day": 15,
+      "breakfast": [
+        {
+          "name": "شوفان بالحليب والموز والقرفة",
+          "calories": 340,
+          "protein": 14
+        }
+      ],
+      "lunch": [
+        {
+          "name": "عدس بالخضار + أرز أبيض + سلطة",
+          "calories": 460,
+          "protein": 22
+        }
+      ],
+      "dinner": [
+        {
+          "name": "أومليت بالخضار والجبن قليل الدسم",
+          "calories": 310,
+          "protein": 24
+        }
+      ],
+      "snacks": [
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        },
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "شوفان سريع بكمية قليلة من الحليب",
+          "calories": 160,
+          "protein": 6
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "شيك بروتين واي + موزة",
+          "calories": 260,
+          "protein": 28
+        }
+      ],
+      "totalCalories": 1805,
+      "totalProtein": 101
+    },
+    {
+      "day": 16,
+      "breakfast": [
+        {
+          "name": "زبادي يوناني بالعسل واللوز",
+          "calories": 290,
+          "protein": 20
+        }
+      ],
+      "lunch": [
+        {
+          "name": "دجاج بالكاري الخفيف + أرز بسمتي",
+          "calories": 540,
+          "protein": 38
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صينية خضار بالفرن مع قطع دجاج",
+          "calories": 350,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        },
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "موزة + قهوة سوداء",
+          "calories": 150,
+          "protein": 2
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "صدر دجاج مشوي + أرز أبيض بسيط",
+          "calories": 380,
+          "protein": 40
+        }
+      ],
+      "totalCalories": 1990,
+      "totalProtein": 141
+    },
+    {
+      "day": 17,
+      "breakfast": [
+        {
+          "name": "توست أسمر بالجبن الأبيض وبيضة مقلية",
+          "calories": 360,
+          "protein": 22
+        }
+      ],
+      "lunch": [
+        {
+          "name": "مكرونة بصلصة الطماطم واللحم المفروم",
+          "calories": 580,
+          "protein": 34
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سلطة تونة بالبيض المسلوق وزيت الزيتون",
+          "calories": 340,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        },
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "تمرتان + كوب ماء بارد",
+          "calories": 100,
+          "protein": 1
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "زبادي بروتيني + ملعقة عسل",
+          "calories": 220,
+          "protein": 22
+        }
+      ],
+      "totalCalories": 1860,
+      "totalProtein": 136
+    },
+    {
+      "day": 18,
+      "breakfast": [
+        {
+          "name": "فطيرة الشوفان بالتمر والحليب",
+          "calories": 320,
+          "protein": 12
+        }
+      ],
+      "lunch": [
+        {
+          "name": "طاجين حمص بالدجاج وخضار الموسم",
+          "calories": 500,
+          "protein": 35
+        }
+      ],
+      "dinner": [
+        {
+          "name": "شوربة خضار بالفريك + خبز أسمر",
+          "calories": 300,
+          "protein": 14
+        }
+      ],
+      "snacks": [
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        },
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "توست بالعسل الطبيعي",
+          "calories": 180,
+          "protein": 4
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "بيضتان مسلوقتان + توست أسمر",
+          "calories": 260,
+          "protein": 20
+        }
+      ],
+      "totalCalories": 1835,
+      "totalProtein": 92
+    },
+    {
+      "day": 19,
+      "breakfast": [
+        {
+          "name": "عجة (أومليت) بالخضار وشريحتي خبز",
+          "calories": 350,
+          "protein": 21
+        }
+      ],
+      "lunch": [
+        {
+          "name": "صدر دجاج مشوي + أرز بني + خضار مشوية",
+          "calories": 520,
+          "protein": 42
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صدر دجاج مشوي + خضار مشوية فقط",
+          "calories": 360,
+          "protein": 38
+        }
+      ],
+      "snacks": [
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        },
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "شوفان سريع بكمية قليلة من الحليب",
+          "calories": 160,
+          "protein": 6
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "شيك بروتين واي + موزة",
+          "calories": 260,
+          "protein": 28
+        }
+      ],
+      "totalCalories": 1930,
+      "totalProtein": 146
+    },
+    {
+      "day": 20,
+      "breakfast": [
+        {
+          "name": "عصيدة الشوفان بالفواكه المجففة",
+          "calories": 300,
+          "protein": 10
+        }
+      ],
+      "lunch": [
+        {
+          "name": "سمك مشوي + كسكسي + سلطة خضراء",
+          "calories": 480,
+          "protein": 36
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سمك بالفرن بالليمون + سلطة خضراء",
+          "calories": 330,
+          "protein": 32
+        }
+      ],
+      "snacks": [
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        },
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "موزة + قهوة سوداء",
+          "calories": 150,
+          "protein": 2
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "صدر دجاج مشوي + أرز أبيض بسيط",
+          "calories": 380,
+          "protein": 40
+        }
+      ],
+      "totalCalories": 1900,
+      "totalProtein": 147
+    },
+    {
+      "day": 21,
+      "breakfast": [
+        {
+          "name": "بيض مسلوق (2) + خبز أسمر + أفوكادو",
+          "calories": 380,
+          "protein": 18
+        }
+      ],
+      "lunch": [
+        {
+          "name": "لحم بقري مشوي + بطاطا مسلوقة + سلطة",
+          "calories": 560,
+          "protein": 40
+        }
+      ],
+      "dinner": [
+        {
+          "name": "أومليت بالخضار والجبن قليل الدسم",
+          "calories": 310,
+          "protein": 24
+        }
+      ],
+      "snacks": [
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        },
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "تمرتان + كوب ماء بارد",
+          "calories": 100,
+          "protein": 1
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "زبادي بروتيني + ملعقة عسل",
+          "calories": 220,
+          "protein": 22
+        }
+      ],
+      "totalCalories": 1845,
+      "totalProtein": 112
+    },
+    {
+      "day": 22,
+      "breakfast": [
+        {
+          "name": "شوفان بالحليب والموز والقرفة",
+          "calories": 340,
+          "protein": 14
+        }
+      ],
+      "lunch": [
+        {
+          "name": "عدس بالخضار + أرز أبيض + سلطة",
+          "calories": 460,
+          "protein": 22
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صينية خضار بالفرن مع قطع دجاج",
+          "calories": 350,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        },
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "توست بالعسل الطبيعي",
+          "calories": 180,
+          "protein": 4
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "بيضتان مسلوقتان + توست أسمر",
+          "calories": 260,
+          "protein": 20
+        }
+      ],
+      "totalCalories": 1870,
+      "totalProtein": 101
+    },
+    {
+      "day": 23,
+      "breakfast": [
+        {
+          "name": "زبادي يوناني بالعسل واللوز",
+          "calories": 290,
+          "protein": 20
+        }
+      ],
+      "lunch": [
+        {
+          "name": "دجاج بالكاري الخفيف + أرز بسمتي",
+          "calories": 540,
+          "protein": 38
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سلطة تونة بالبيض المسلوق وزيت الزيتون",
+          "calories": 340,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        },
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "شوفان سريع بكمية قليلة من الحليب",
+          "calories": 160,
+          "protein": 6
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "شيك بروتين واي + موزة",
+          "calories": 260,
+          "protein": 28
+        }
+      ],
+      "totalCalories": 1850,
+      "totalProtein": 149
+    },
+    {
+      "day": 24,
+      "breakfast": [
+        {
+          "name": "توست أسمر بالجبن الأبيض وبيضة مقلية",
+          "calories": 360,
+          "protein": 22
+        }
+      ],
+      "lunch": [
+        {
+          "name": "مكرونة بصلصة الطماطم واللحم المفروم",
+          "calories": 580,
+          "protein": 34
+        }
+      ],
+      "dinner": [
+        {
+          "name": "شوربة خضار بالفريك + خبز أسمر",
+          "calories": 300,
+          "protein": 14
+        }
+      ],
+      "snacks": [
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        },
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "موزة + قهوة سوداء",
+          "calories": 150,
+          "protein": 2
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "صدر دجاج مشوي + أرز أبيض بسيط",
+          "calories": 380,
+          "protein": 40
+        }
+      ],
+      "totalCalories": 2045,
+      "totalProtein": 119
+    },
+    {
+      "day": 25,
+      "breakfast": [
+        {
+          "name": "فطيرة الشوفان بالتمر والحليب",
+          "calories": 320,
+          "protein": 12
+        }
+      ],
+      "lunch": [
+        {
+          "name": "طاجين حمص بالدجاج وخضار الموسم",
+          "calories": 500,
+          "protein": 35
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صدر دجاج مشوي + خضار مشوية فقط",
+          "calories": 360,
+          "protein": 38
+        }
+      ],
+      "snacks": [
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        },
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "تمرتان + كوب ماء بارد",
+          "calories": 100,
+          "protein": 1
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "زبادي بروتيني + ملعقة عسل",
+          "calories": 220,
+          "protein": 22
+        }
+      ],
+      "totalCalories": 1780,
+      "totalProtein": 119
+    },
+    {
+      "day": 26,
+      "breakfast": [
+        {
+          "name": "عجة (أومليت) بالخضار وشريحتي خبز",
+          "calories": 350,
+          "protein": 21
+        }
+      ],
+      "lunch": [
+        {
+          "name": "صدر دجاج مشوي + أرز بني + خضار مشوية",
+          "calories": 520,
+          "protein": 42
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سمك بالفرن بالليمون + سلطة خضراء",
+          "calories": 330,
+          "protein": 32
+        }
+      ],
+      "snacks": [
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        },
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "توست بالعسل الطبيعي",
+          "calories": 180,
+          "protein": 4
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "بيضتان مسلوقتان + توست أسمر",
+          "calories": 260,
+          "protein": 20
+        }
+      ],
+      "totalCalories": 1900,
+      "totalProtein": 146
+    },
+    {
+      "day": 27,
+      "breakfast": [
+        {
+          "name": "عصيدة الشوفان بالفواكه المجففة",
+          "calories": 300,
+          "protein": 10
+        }
+      ],
+      "lunch": [
+        {
+          "name": "سمك مشوي + كسكسي + سلطة خضراء",
+          "calories": 480,
+          "protein": 36
+        }
+      ],
+      "dinner": [
+        {
+          "name": "أومليت بالخضار والجبن قليل الدسم",
+          "calories": 310,
+          "protein": 24
+        }
+      ],
+      "snacks": [
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        },
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "شوفان سريع بكمية قليلة من الحليب",
+          "calories": 160,
+          "protein": 6
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "شيك بروتين واي + موزة",
+          "calories": 260,
+          "protein": 28
+        }
+      ],
+      "totalCalories": 1785,
+      "totalProtein": 111
+    },
+    {
+      "day": 28,
+      "breakfast": [
+        {
+          "name": "بيض مسلوق (2) + خبز أسمر + أفوكادو",
+          "calories": 380,
+          "protein": 18
+        }
+      ],
+      "lunch": [
+        {
+          "name": "لحم بقري مشوي + بطاطا مسلوقة + سلطة",
+          "calories": 560,
+          "protein": 40
+        }
+      ],
+      "dinner": [
+        {
+          "name": "صينية خضار بالفرن مع قطع دجاج",
+          "calories": 350,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "بيضة مسلوقة + قليل من الملح",
+          "calories": 80,
+          "protein": 6
+        },
+        {
+          "name": "تفاحة + ملعقة زبدة فول سوداني",
+          "calories": 200,
+          "protein": 5
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "موزة + قهوة سوداء",
+          "calories": 150,
+          "protein": 2
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "صدر دجاج مشوي + أرز أبيض بسيط",
+          "calories": 380,
+          "protein": 40
+        }
+      ],
+      "totalCalories": 2100,
+      "totalProtein": 141
+    },
+    {
+      "day": 29,
+      "breakfast": [
+        {
+          "name": "شوفان بالحليب والموز والقرفة",
+          "calories": 340,
+          "protein": 14
+        }
+      ],
+      "lunch": [
+        {
+          "name": "عدس بالخضار + أرز أبيض + سلطة",
+          "calories": 460,
+          "protein": 22
+        }
+      ],
+      "dinner": [
+        {
+          "name": "سلطة تونة بالبيض المسلوق وزيت الزيتون",
+          "calories": 340,
+          "protein": 30
+        }
+      ],
+      "snacks": [
+        {
+          "name": "جبن قريش (100غ)",
+          "calories": 120,
+          "protein": 14
+        },
+        {
+          "name": "زبادي يوناني طبيعي",
+          "calories": 140,
+          "protein": 13
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "تمرتان + كوب ماء بارد",
+          "calories": 100,
+          "protein": 1
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "زبادي بروتيني + ملعقة عسل",
+          "calories": 220,
+          "protein": 22
+        }
+      ],
+      "totalCalories": 1720,
+      "totalProtein": 116
+    },
+    {
+      "day": 30,
+      "breakfast": [
+        {
+          "name": "زبادي يوناني بالعسل واللوز",
+          "calories": 290,
+          "protein": 20
+        }
+      ],
+      "lunch": [
+        {
+          "name": "دجاج بالكاري الخفيف + أرز بسمتي",
+          "calories": 540,
+          "protein": 38
+        }
+      ],
+      "dinner": [
+        {
+          "name": "شوربة خضار بالفريك + خبز أسمر",
+          "calories": 300,
+          "protein": 14
+        }
+      ],
+      "snacks": [
+        {
+          "name": "حفنة لوز نيء (30غ)",
+          "calories": 170,
+          "protein": 6
+        },
+        {
+          "name": "موزة متوسطة",
+          "calories": 105,
+          "protein": 1
+        }
+      ],
+      "preworkout": [
+        {
+          "name": "توست بالعسل الطبيعي",
+          "calories": 180,
+          "protein": 4
+        }
+      ],
+      "postworkout": [
+        {
+          "name": "بيضتان مسلوقتان + توست أسمر",
+          "calories": 260,
+          "protein": 20
+        }
+      ],
+      "totalCalories": 1845,
+      "totalProtein": 103
+    }
+  ]
+}
