@@ -1,0 +1,1028 @@
+/* ==========================================================================
+   Hybrid Blueprint — نظام تصميم كامل
+   خلفية داكنة، بطاقات مرتفعة قليلاً، لمسات لونية دقيقة (أخضر / أزرق / كهرماني)
+   ========================================================================== */
+
+:root {
+  --bg: #0F172A;
+  --bg-elevated: #131E36;
+  --card: #1E293B;
+  --card-hover: #24334A;
+  --border: #2C3B54;
+
+  --primary: #22C55E;
+  --primary-dim: #16321F;
+  --secondary: #3B82F6;
+  --secondary-dim: #142438;
+  --accent: #F59E0B;
+  --accent-dim: #3A2A0E;
+  --danger: #EF4444;
+
+  --text: #FFFFFF;
+  --text-muted: #94A3B8;
+  --text-faint: #64748B;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-full: 999px;
+
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.5);
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Tahoma', 'Geeza Pro', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: contain;
+}
+
+body {
+  background:
+    radial-gradient(circle at 20% -10%, rgba(59, 130, 246, 0.10), transparent 45%),
+    radial-gradient(circle at 90% 0%, rgba(34, 197, 94, 0.08), transparent 40%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+h1, h2, h3, p, ul, form { margin: 0; padding: 0; }
+ul { list-style: none; }
+button { font-family: inherit; }
+input {
+  font-family: inherit;
+  color: var(--text);
+  background: var(--bg-elevated);
+}
+
+#root {
+  max-width: 560px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 88px;
+}
+
+/* ==========================================================================
+   انتقال الصفحات
+   ========================================================================== */
+
+#app {
+  display: block;
+  min-height: 100vh;
+}
+
+.page-enter {
+  animation: fadeSlideIn 0.32s var(--ease);
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page {
+  padding: 20px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ==========================================================================
+   الرأس (Header)
+   ========================================================================== */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.page-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header-spacer { width: 40px; }
+
+.greeting {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.dashboard .page-header h1 { font-size: 24px; }
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s var(--ease), transform 0.15s var(--ease);
+}
+.icon-btn:active { transform: scale(0.92); }
+.icon-btn:hover { background: var(--card-hover); }
+.icon-btn .icon svg { width: 19px; height: 19px; }
+
+/* ==========================================================================
+   الأيقونات
+   ========================================================================== */
+
+.icon { display: inline-flex; align-items: center; justify-content: center; }
+.icon svg { width: 18px; height: 18px; stroke: currentColor; }
+.muted-icon { color: var(--text-muted); }
+.muted-icon svg { width: 15px; height: 15px; }
+
+/* ==========================================================================
+   البطاقات
+   ========================================================================== */
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.card-body { display: block; }
+
+/* ==========================================================================
+   بطاقة الوزن
+   ========================================================================== */
+
+.weight-card {
+  background: linear-gradient(135deg, var(--card), var(--bg-elevated));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  box-shadow: var(--shadow-card);
+}
+
+.weight-info { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.weight-label { font-size: 12px; color: var(--text-muted); }
+.weight-value { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+.weight-value small { font-size: 15px; font-weight: 500; color: var(--text-muted); }
+
+.weight-goal-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   أشرطة التقدم
+   ========================================================================== */
+
+.progress-wrap { display: flex; flex-direction: column; gap: 6px; }
+.progress-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+.progress-value { color: var(--text); font-weight: 600; }
+.progress-track {
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--bg-elevated);
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.5s var(--ease);
+}
+.progress-fill-primary { background: linear-gradient(90deg, #16A34A, var(--primary)); }
+.progress-fill-secondary { background: linear-gradient(90deg, #2563EB, var(--secondary)); }
+.progress-fill-accent { background: linear-gradient(90deg, #D97706, var(--accent)); }
+
+/* حلقات دائرية */
+
+.rings-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ring-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 8px;
+}
+.ring-wrap { position: relative; margin: 0 auto; }
+.ring-svg { display: block; }
+.ring-track { stroke: var(--bg-elevated); }
+.ring-fill { stroke-linecap: round; transition: stroke-dashoffset 0.6s var(--ease); }
+.ring-fill-primary { stroke: var(--primary); }
+.ring-fill-secondary { stroke: var(--secondary); }
+.ring-fill-accent { stroke: var(--accent); }
+.ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ring-center-value { font-size: 15px; font-weight: 800; }
+.ring-center-label { font-size: 10px; color: var(--text-muted); }
+.ring-caption {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ring-caption .icon svg { width: 13px; height: 13px; }
+
+/* ==========================================================================
+   متابعة الماء
+   ========================================================================== */
+
+.water-cups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.water-cup {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-faint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+}
+.water-cup svg { width: 17px; height: 17px; }
+.water-cup.filled {
+  background: var(--secondary-dim);
+  border-color: var(--secondary);
+  color: var(--secondary);
+  transform: scale(1.05);
+}
+.water-cup:active { transform: scale(0.9); }
+
+/* ==========================================================================
+   المهام
+   ========================================================================== */
+
+.task-list { display: flex; flex-direction: column; gap: 10px; }
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background 0.2s var(--ease);
+  font-size: 14px;
+}
+.task-item:active { background: var(--card-hover); }
+.task-item.done { opacity: 0.55; }
+.task-item.done span { text-decoration: line-through; }
+
+.task-check {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--text-faint);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg);
+  cursor: pointer;
+}
+.task-item.done .task-check,
+.shopping-item.done .task-check {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+.task-check svg { width: 13px; height: 13px; }
+
+/* ==========================================================================
+   الأسبوع
+   ========================================================================== */
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.week-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 2px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+}
+.week-day-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+}
+.week-day.active .week-day-dot { background: var(--primary); }
+.week-day.is-today {
+  background: var(--primary-dim);
+  border: 1px solid var(--primary);
+}
+.week-day.is-today .week-day-label { color: var(--primary); font-weight: 700; }
+.week-day-label { font-size: 10.5px; color: var(--text-muted); }
+
+/* ==========================================================================
+   روابط سريعة
+   ========================================================================== */
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 6px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s var(--ease), transform 0.15s var(--ease);
+}
+.quick-link:active { transform: scale(0.96); background: var(--card-hover); }
+.quick-link .icon svg { width: 20px; height: 20px; color: var(--accent); }
+
+/* ==========================================================================
+   شريط التنقل السفلي
+   ========================================================================== */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(19, 30, 54, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border);
+  padding: 10px 6px calc(10px + env(safe-area-inset-bottom));
+  z-index: 40;
+}
+.bottom-nav.hidden { display: none; }
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-faint);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+  transition: color 0.2s var(--ease), background 0.2s var(--ease);
+  flex: 1;
+}
+.nav-item .nav-icon svg { width: 21px; height: 21px; transition: transform 0.2s var(--ease); }
+.nav-label { font-size: 10px; font-weight: 600; }
+.nav-item.active { color: var(--primary); }
+.nav-item.active .nav-icon svg { transform: translateY(-2px); }
+
+/* ==========================================================================
+   أزرار
+   ========================================================================== */
+
+.btn {
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.15s var(--ease), filter 0.2s var(--ease);
+}
+.btn:active { transform: scale(0.97); }
+.btn-block { width: 100%; }
+.btn-sm { padding: 9px 14px; font-size: 12.5px; }
+.btn-icon-only { width: 46px; padding: 0; }
+
+.btn-primary {
+  background: linear-gradient(135deg, #16A34A, var(--primary));
+  color: #052e12;
+}
+.btn-primary:disabled { opacity: 0.4; }
+.btn-secondary { background: var(--secondary); color: white; }
+.btn-ghost {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-danger { background: var(--danger); color: white; }
+
+/* ==========================================================================
+   نماذج الإدخال
+   ========================================================================== */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.field input {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s var(--ease);
+}
+.field input:focus { border-color: var(--primary); }
+.field-row { display: flex; gap: 10px; }
+.modal-form { display: flex; flex-direction: column; gap: 14px; }
+
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.switch-row:last-child { border-bottom: none; }
+.switch-row input[type="checkbox"] {
+  appearance: none;
+  width: 44px;
+  height: 26px;
+  background: var(--border);
+  border-radius: var(--radius-full);
+  position: relative;
+  cursor: pointer;
+  transition: background 0.25s var(--ease);
+}
+.switch-row input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  top: 3px;
+  right: 3px;
+  transition: transform 0.25s var(--ease);
+}
+.switch-row input[type="checkbox"]:checked { background: var(--primary); }
+.switch-row input[type="checkbox"]:checked::before { transform: translateX(-18px); }
+
+.add-item-row {
+  display: flex;
+  gap: 10px;
+}
+.add-item-row input {
+  flex: 1;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 12px 16px;
+  outline: none;
+}
+.add-item-row input:focus { border-color: var(--primary); }
+
+/* ==========================================================================
+   نافذة منبثقة (Bottom Sheet Modal)
+   ========================================================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 15, 0.6);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.22s var(--ease);
+}
+.modal-overlay.open { opacity: 1; }
+
+.modal-sheet {
+  width: 100%;
+  max-width: 560px;
+  background: var(--card);
+  border-radius: 24px 24px 0 0;
+  padding: 10px 20px calc(24px + env(safe-area-inset-bottom));
+  transform: translateY(100%);
+  transition: transform 0.3s var(--ease);
+  box-shadow: var(--shadow-pop);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+.modal-overlay.open .modal-sheet { transform: translateY(0); }
+
+.modal-handle {
+  width: 40px;
+  height: 4px;
+  background: var(--border);
+  border-radius: var(--radius-full);
+  margin: 6px auto 14px;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.modal-header h3 { font-size: 17px; font-weight: 700; }
+body.modal-open { overflow: hidden; }
+
+/* ==========================================================================
+   التغذية
+   ========================================================================== */
+
+.totals-bar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 14px;
+}
+.totals-bar span { display: flex; align-items: center; gap: 6px; }
+
+.meal-sections { display: flex; flex-direction: column; gap: 14px; }
+.meal-items { display: flex; flex-direction: column; gap: 8px; }
+.meal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+}
+.meal-item-info { display: flex; flex-direction: column; gap: 2px; }
+.meal-item-name { font-size: 13.5px; font-weight: 600; }
+.meal-item-macros { font-size: 11.5px; color: var(--text-muted); }
+.empty-hint { font-size: 12.5px; color: var(--text-faint); padding: 10px 2px; }
+
+/* ==========================================================================
+   المشروبات
+   ========================================================================== */
+
+.drinks-grid { display: flex; flex-direction: column; gap: 14px; }
+.drink-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-card);
+}
+.drink-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.drink-card-top h3 { font-size: 15px; font-weight: 700; }
+.drink-icon { color: var(--secondary); }
+.drink-icon svg { width: 20px; height: 20px; }
+.drink-macros {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.drink-macros span { display: flex; align-items: center; gap: 4px; }
+.drink-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.drink-ingredients { font-size: 12.5px; }
+.ingredients-label { color: var(--text-muted); font-weight: 600; }
+.drink-ingredients ul { margin-top: 6px; display: flex; flex-direction: column; gap: 4px; }
+.drink-ingredients li { position: relative; padding-right: 14px; color: var(--text); }
+.drink-ingredients li::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+/* ==========================================================================
+   البرامج (جري / قوة) — عنصر details/summary
+   ========================================================================== */
+
+.program-list { display: flex; flex-direction: column; gap: 12px; }
+.program-card { padding: 0; overflow: hidden; }
+.program-summary {
+  list-style: none;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.program-summary::-webkit-details-marker { display: none; }
+.program-summary-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.program-summary-text .icon svg { width: 22px; height: 22px; color: var(--primary); }
+.program-summary-text h3 { font-size: 15px; font-weight: 700; }
+.chevron-indicator svg { width: 16px; height: 16px; transition: transform 0.25s var(--ease); }
+.program-card[open] .chevron-indicator svg { transform: rotate(-90deg); }
+
+.program-details {
+  padding: 0 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: fadeSlideIn 0.25s var(--ease);
+}
+.program-plan { display: flex; flex-direction: column; gap: 8px; }
+.program-plan li {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  padding: 8px 10px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-sm);
+}
+.program-plan li.plan-done {
+  color: var(--primary);
+  background: var(--primary-dim);
+}
+.program-actions { display: flex; gap: 10px; }
+.program-actions .btn { flex: 1; }
+.last-session { font-size: 12px; color: var(--text-muted); }
+
+/* ==========================================================================
+   التقدم
+   ========================================================================== */
+
+.chart-canvas { width: 100%; height: auto; display: block; }
+.pr-list { display: flex; flex-direction: column; gap: 8px; }
+.pr-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  font-size: 13.5px;
+}
+.pr-value { color: var(--accent); font-weight: 700; }
+
+/* ==========================================================================
+   التسوق
+   ========================================================================== */
+
+.shopping-list { display: flex; flex-direction: column; gap: 10px; }
+.shopping-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+.shopping-item.done { opacity: 0.5; }
+.shopping-item.done .shopping-item-info span:first-child { text-decoration: line-through; }
+.shopping-item-info { flex: 1; display: flex; flex-direction: column; }
+.shopping-qty { font-size: 11px; color: var(--text-muted); }
+
+/* ==========================================================================
+   الإعدادات
+   ========================================================================== */
+
+.app-version {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--text-faint);
+  padding-top: 6px;
+}
+
+/* ==========================================================================
+   شاشة البداية (Onboarding)
+   ========================================================================== */
+
+.onboarding {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 24px;
+  gap: 32px;
+}
+.onboarding-brand { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.brand-mark {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--primary-dim), var(--secondary-dim));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.brand-mark svg { width: 30px; height: 30px; }
+.onboarding-brand h1 { font-size: 26px; font-weight: 800; }
+.onboarding-brand p { font-size: 13.5px; color: var(--text-muted); max-width: 320px; line-height: 1.6; }
+.onboarding-form { display: flex; flex-direction: column; gap: 16px; }
+
+/* ==========================================================================
+   استجابة الشاشات الصغيرة/الكبيرة
+   ========================================================================== */
+
+@media (min-width: 420px) {
+  .page { padding: 24px 24px 28px; }
+}
+
+@media (max-width: 360px) {
+  .rings-row { gap: 6px; }
+  .ring-card { padding: 10px 4px; }
+  .ring-center-value { font-size: 13px; }
+  .weight-value { font-size: 27px; }
+  .quick-links { grid-template-columns: repeat(2, 1fr); }
+  .nav-label { font-size: 9px; }
+}
+
+@media (max-width: 340px) {
+  .rings-row { flex-wrap: wrap; }
+  .ring-card { flex: 1 1 45%; }
+}
+
+@media (min-width: 700px) {
+  #root { max-width: 640px; }
+  .rings-row { gap: 16px; }
+  .quick-links { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+}
+
+/* ==========================================================================
+   الحركة المُخفّضة
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ==========================================================================
+   حالة التحميل
+   ========================================================================== */
+
+.loading-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding: 40px 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.loading-hint .icon svg { width: 16px; height: 16px; }
+
+/* ==========================================================================
+   متصفح أيام خطة التغذية
+   ========================================================================== */
+
+.nutrition-body { display: flex; flex-direction: column; gap: 14px; }
+.day-nav-card { padding: 10px 14px; }
+.day-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.day-nav-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: opacity 0.2s var(--ease);
+}
+.meal-item.eaten { opacity: 0.55; }
+.meal-item.eaten .meal-item-name { text-decoration: line-through; }
+.meal-check {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--text-faint);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg);
+  cursor: pointer;
+}
+.meal-item.eaten .meal-check { background: var(--primary); border-color: var(--primary); }
+.meal-check svg { width: 13px; height: 13px; }
+
+.shopping-preview .empty-hint { padding: 0; }
+
+/* اقتراحات التسوق داخل النافذة المنبثقة */
+.shopping-suggestions { display: flex; flex-direction: column; gap: 18px; }
+.suggestion-category { display: flex; flex-direction: column; gap: 8px; }
+.suggestion-cat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.suggestion-cat-header h4 { font-size: 14px; font-weight: 700; }
+.suggestion-items { display: flex; flex-direction: column; gap: 6px; }
+.suggestion-items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+.added-check { color: var(--primary); display: flex; padding: 8px; }
+.added-check svg { width: 16px; height: 16px; }
+
+/* ==========================================================================
+   تبويبات المشروبات
+   ========================================================================== */
+
+.drinks-tabs-wrap { display: flex; flex-direction: column; gap: 14px; }
+.tabs {
+  display: flex;
+  gap: 8px;
+  background: var(--bg-elevated);
+  padding: 5px;
+  border-radius: var(--radius-full);
+}
+.tab-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 10px 8px;
+  border-radius: var(--radius-full);
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.tab-btn.active { background: var(--primary); color: #052e12; }
+
+/* ==========================================================================
+   جدول التمارين
+   ========================================================================== */
+
+.strength-intro { text-align: center; }
+.strength-intro .card-title { justify-content: center; }
+.strength-intro .card-subtitle { margin-top: 6px; display: block; }
+
+.exercise-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+.exercise-table th {
+  text-align: right;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+}
+.exercise-table td {
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.exercise-table tr:last-child td { border-bottom: none; }
+
+.program-plan li.plan-current {
+  color: var(--accent);
+  background: var(--accent-dim);
+  font-weight: 600;
+}
+/* التركيز عبر لوحة المفاتيح */
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   الوضع الفاتح (اختياري عبر الإعدادات)
+   ========================================================================== */
+
+html.light-mode {
+  --bg: #F1F5F9;
+  --bg-elevated: #E2E8F0;
+  --card: #FFFFFF;
+  --card-hover: #F8FAFC;
+  --border: #E2E8F0;
+  --text: #0F172A;
+  --text-muted: #64748B;
+  --text-faint: #94A3B8;
+  --shadow-card: 0 4px 16px rgba(15, 23, 42, 0.08);
+  --shadow-pop: 0 12px 32px rgba(15, 23, 42, 0.18);
+}
+
+html.light-mode body {
+  background:
+    radial-gradient(circle at 20% -10%, rgba(59, 130, 246, 0.06), transparent 45%),
+    radial-gradient(circle at 90% 0%, rgba(34, 197, 94, 0.05), transparent 40%),
+    var(--bg);
+}
+
+html.light-mode .btn-primary { color: #ffffff; }
+html.light-mode .bottom-nav { background: rgba(255, 255, 255, 0.9); }
